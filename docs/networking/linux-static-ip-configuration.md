@@ -118,7 +118,15 @@ The default ethernet interface file is located at `/etc/sysconfig/network-script
     # Edit from "yes" to "no":
     PEERDNS=no
 
-    ...
+    # Keep the following lines:
+    DEVICE="eth0"
+    NAME="eth0"
+    ONBOOT="yes"
+    IPV6INIT="yes"
+    IPV6_ADDR_GEN_MODE="eui64"
+    IPV6_PRIVACY="no"
+    
+    
 
     # Add the following lines:
     DOMAIN=members.linode.com
